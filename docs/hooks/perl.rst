@@ -3,8 +3,6 @@
 Writing Dredd Hooks In Perl
 ===========================
 
-|Build Status|
-
 `GitHub repository <https://github.com/ungrim97/Dredd-Hooks>`__
 
 Perl hooks are using :ref:`Dredd’s hooks handler socket interface <hooks-new-language>`. For using Perl hooks in Dredd you have to have :ref:`Dredd already installed <quickstart>`
@@ -232,6 +230,3 @@ Remove trailing newline character in expected *plain text* bodies
            $transaction->{expected}{body} = chomp($transaction->{expected}{body});
        }
    });
-
-.. |Build Status| image:: https://api.travis-ci.org/ungrim97/Dredd-Hooks.svg?branch=master
-   :target: https://api.travis-ci.org/ungrim97/Dredd-Hooks.svg?branch=master

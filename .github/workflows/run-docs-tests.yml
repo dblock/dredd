@@ -1,7 +1,7 @@
 
-name: run-docs-test
+name: run-docs-tests
 
-on: push
+on: [push, pull_request]
     # here add directory listing on push to test
     # paths:
       # - /docs/*.rst
@@ -30,7 +30,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest, macos-13]
         node-version: [12.x]
 
     steps:
@@ -59,7 +59,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest, macos-13]
         node-version: [12.x]
 
     steps:

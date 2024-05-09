@@ -1,7 +1,9 @@
 # Dredd — HTTP API Testing Framework
 
 [![npm version](https://badge.fury.io/js/dredd.svg)](https://www.npmjs.com/package/dredd)
-[![Build Status](https://circleci.com/gh/apiaryio/dredd/tree/master.svg?style=svg)](https://circleci.com/gh/apiaryio/dredd/tree/master)
+[![Tests](https://github.com/apiaryio/dredd/actions/workflows/run-tests.yml/badge.svg)](https://github.com/apiaryio/dredd/actions/workflows/run-tests.yml)
+[![E2E Tests](https://github.com/apiaryio/dredd/actions/workflows/run-e2e-tests.yml/badge.svg)](https://github.com/apiaryio/dredd/actions/workflows/run-e2e-tests.yml)
+[![Smoke Tests](https://github.com/apiaryio/dredd/actions/workflows/run-smoke-tests.yml/badge.svg)](https://github.com/apiaryio/dredd/actions/workflows/run-smoke-tests.yml)
 [![Build Status](https://ci.appveyor.com/api/projects/status/n3ixfxh72qushyr4/branch/master?svg=true)](https://ci.appveyor.com/project/Apiary/dredd/branch/master)
 [![Documentation Status](https://readthedocs.org/projects/dredd/badge/?version=latest)](https://readthedocs.org/projects/dredd/builds/)
 [![Known Vulnerabilities](https://snyk.io/test/npm/dredd/badge.svg)](https://snyk.io/test/npm/dredd)

@@ -1,16 +1,16 @@
-name: run-tests
+name: run-lints
 
 on: [push, pull_request]
 
 jobs:
-  test:
+  lint:
 
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -19,5 +19,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install --frozen-lockfile
-    - run: yarn build
-    - run: yarn test
+    - run: yarn lint
+    - run: yarn prettify:check
