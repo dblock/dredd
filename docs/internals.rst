@@ -67,7 +67,7 @@ To hack Dredd locally, clone the repository and run ``npm install`` to install J
 Commit message format
 ~~~~~~~~~~~~~~~~~~~~~
 
-`Semantic Release <https://github.com/semantic-release/semantic-release>`__ automatically manages releasing of new Dredd versions to the `npm <https://www.npmjs.com/>`_ registry. It makes sure correct version numbers get increased according to the **meaning** of your changes once they are added to the ``master`` branch. This requires all commit messages to be in a specific format, called `Conventional Changelog <https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#user-content--git-commit-guidelines>`__:
+`Semantic Release <https://github.com/semantic-release/semantic-release>`__ automatically manages releasing of new Dredd versions to the `npm <https://www.npmjs.com/>`_ registry. It makes sure correct version numbers get increased according to the **meaning** of your changes once they are added to the ``master`` branch. This requires all commit messages to be in a specific format, called `Conventional Changelog <https://github.com/angular/angular.js/blob/master/DEVELOPERS.md>`__:
 
 .. code-block:: text
 
@@ -304,10 +304,10 @@ MSON spec
     Simplifies linking the `MSON`_ spec. Usage: ``:mson:`353-type-attribute```
 
 OpenAPI 2 spec
-    Simplifies linking the `OpenAPI 2`_ spec. Usage: ``:openapi2:`parameterobject```
+    Simplifies linking the `OpenAPI 2`_ spec. Usage: ``:openapi2:`parameter-object```
 
 OpenAPI 3 spec
-    Simplifies linking the `OpenAPI 3`_ spec. Usage: ``:openapi3:`parameterobject```
+    Simplifies linking the `OpenAPI 3`_ spec. Usage: ``:openapi3:`parameter-object```
 
 RFCs
     Simplifies linking the RFCs. Not a custom extension in fact, this is provided by Sphinx out of the box. Usage: ``:rfc:`1855```

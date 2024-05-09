@@ -12,8 +12,8 @@
 
 .. OpenAPI specification
 
-.. _OpenAPI 2: https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md
-.. _OpenAPI 3: https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md
+.. _OpenAPI 2: https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md
+.. _OpenAPI 3: https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md
 
 
 .. JSON Schema

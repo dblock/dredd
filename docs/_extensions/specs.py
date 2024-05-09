@@ -15,8 +15,8 @@ REFERENCE_RE = re.compile(r'''
 SPECS = {
     'apib': ('API Blueprint', 'https://apiblueprint.org/documentation/specification.html#{anchor}'),
     'mson': ('MSON', 'https://apiblueprint.org/documentation/mson/specification.html#{anchor}'),
-    'openapi2': ('OpenAPI 2', 'https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#user-content-{anchor}'),
-    'openapi3': ('OpenAPI 3', 'https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#user-content-{anchor}'),
+    'openapi2': ('OpenAPI 2', 'https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md'), # TODO: re-add #{anchor}, fix yarn docs:lint
+    'openapi3': ('OpenAPI 3', 'https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md#{anchor}'),
 }
 
 

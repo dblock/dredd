@@ -424,7 +424,7 @@ If you describe a JSON body which has attributes ``name`` and ``size``, the foll
 It’s because properties are optional by default in both `MSON`_ and `JSON Schema`_ and you need to explicitly specify them as required.
 
 -  In API Blueprint’s :apib:`Attributes <def-attributes-section>` section, you can use ``required`` (:mson:`353-type-attribute`).
--  In API Blueprint’s :apib:`Schema <def-schema-section>` sections and in OpenAPI 2 you can use ``required`` (`spec <https://json-schema.org/understanding-json-schema/reference/object.html#required-properties>`__), where you list the required properties. (Note this is true only for the `Draft v4 <https://tools.ietf.org/html/draft-zyp-json-schema-04>`__ JSON Schema, in older versions the ``required`` functionality was done differently.)
+-  In API Blueprint’s :apib:`Schema <def-schema-section>` sections and in OpenAPI 2 you can use ``required`` (`spec <https://json-schema.org/understanding-json-schema/reference/object.html>`__), where you list the required properties. (Note this is true only for the `Draft v4 <https://tools.ietf.org/html/draft-zyp-json-schema-04>`__ JSON Schema, in older versions the ``required`` functionality was done differently.)
 
 Validating Structure of Array Items
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -452,7 +452,7 @@ If you describe a JSON body which has attributes ``name`` and ``size``, the foll
 If the size should be always equal to 300, you need to specify the fact in your API description.
 
 -  In API Blueprint’s :apib:`Attributes <def-attributes-section>` sections you can mark your property with ``fixed`` (:mson:`353-type-attribute`), which turns the sample value into a required value. You can also use ``enum`` (:mson:`212-structure-types`) to provide a set of possible values.
--  In API Blueprint’s :apib:`Schema <def-schema-section>` sections and in OpenAPI 2 you can use ``enum`` (`spec <https://json-schema.org/understanding-json-schema/reference/generic.html#enumerated-values>`__) with one or more possible values.
+-  In API Blueprint’s :apib:`Schema <def-schema-section>` sections and in OpenAPI 2 you can use ``enum`` (`spec <https://json-schema.org/understanding-json-schema/reference/enum>`__) with one or more possible values.
 
 Integrating Dredd with Your Test Suite
 --------------------------------------
@@ -732,7 +732,7 @@ Example Values for Request Parameters
 
 While example values are natural part of the API Blueprint format, the OpenAPI 2 specification allows them only for ``body`` request parameters (``schema.example``).
 
-However, Dredd needs to know what values to use when testing described API, so it supports ``x-example`` :openapi2:`vendor extension property <vendorextensions>` to overcome the OpenAPI 2 limitation:
+However, Dredd needs to know what values to use when testing described API, so it supports ``x-example`` :openapi2:`vendor extension property <specification-extensions>` to overcome the OpenAPI 2 limitation:
 
 .. code-block:: openapi2
 

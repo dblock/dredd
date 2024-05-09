@@ -39,7 +39,7 @@ class Tests(unittest.TestCase):
         self.assertTrue(check_uri('https://apiblueprint.org'))
 
     def test_github(self):
-        self.assertTrue(check_uri('https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md'))
+        self.assertTrue(check_uri('https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md'))
 
     def test_relevant_github_repo_but_irrelevant_path(self):
         self.assertTrue(check_uri('https://github.com/apiaryio/dredd/issues/820'))

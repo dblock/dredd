@@ -94,8 +94,8 @@ $ npm install -g dredd
 [api blueprint]: https://apiblueprint.org/
 [api blueprint tutorial]: https://apiblueprint.org/documentation/tutorial.html
 [api blueprint examples]: https://github.com/apiaryio/api-blueprint/tree/master/examples
-[openapi 2]: https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md
-[openapi 3]: https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md
+[openapi 2]: https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md
+[openapi 3]: https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md
 [documentation]: https://dredd.org/en/latest/
 [changelog]: https://github.com/apiaryio/dredd/releases
 [contributor's guidelines]: https://dredd.org/en/latest/contributing/

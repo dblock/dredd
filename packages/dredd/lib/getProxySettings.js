@@ -11,7 +11,7 @@ const PROXY_ENV_VARIABLES = ['HTTP_PROXY', 'HTTPS_PROXY', 'NO_PROXY'];
  *
  * Note: The settings are later only printed to the user. Applying the settings
  * is handled directly by the 'request' library, see
- * https://github.com/request/request#user-content-proxies
+ * https://github.com/request/request#proxies
  */
 export default function getProxySettings(env) {
   return Object.entries(env)

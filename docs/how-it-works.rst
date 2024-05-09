@@ -150,7 +150,7 @@ If Dredd isn’t able to infer any value for a required parameter, it will termi
 Request Headers
 ~~~~~~~~~~~~~~~
 
-In `OpenAPI 2`_ documents, HTTP headers are inferred from ``"in": "header"`` parameters (:openapi2:`parameterobject`). HTTP headers significant for content negotiation are inferred according to following rules:
+In `OpenAPI 2`_ documents, HTTP headers are inferred from ``"in": "header"`` parameters (:openapi2:`parameter-object`). HTTP headers significant for content negotiation are inferred according to following rules:
 
 -  ``consumes`` (:openapi2:`swaggerconsumes`) is propagated as request’s ``Content-Type`` header.
 -  ``produces`` (:openapi2:`swaggerproduces`) is propagated as request’s ``Accept`` header.
@@ -173,7 +173,7 @@ This order :apib:`exactly follows the API Blueprint specification <relation-of-b
 OpenAPI 2
 ^^^^^^^^^
 
-The effective request body is inferred from ``"in": "body"`` and ``"in": "formData"`` parameters (:openapi2:`parameterobject`).
+The effective request body is inferred from ``"in": "body"`` and ``"in": "formData"`` parameters (:openapi2:`parameter-object`).
 
 If body parameter has ``schema.example`` (:openapi2:`schemaexample`), it is used as a raw JSON sample for the request body. If it’s not present, Dredd’s `OpenAPI 2 adapter <https://github.com/apiaryio/api-elements.js/tree/master/packages/openapi2-parser>`__ generates sample values from the JSON Schema provided in the ``schema`` (:openapi2:`parameterschema`) property. Following rules apply when the adapter fills values of the properties, ordered by precedence:
 
@@ -255,6 +255,6 @@ You can tell Dredd to use HTTP(S) proxy for:
 -  downloading API description documents (the positional argument :option:`api-description-document` or the :option:`--path` option accepts also URL)
 -  :ref:`reporting to Apiary <using-apiary-reporter-and-apiary-tests>`
 
-Dredd respects ``HTTP_PROXY``, ``HTTPS_PROXY``, ``NO_PROXY``, ``http_proxy``, ``https_proxy``, and ``no_proxy`` environment variables. For more information on how those work see `relevant section <https://github.com/request/request#user-content-proxies>`__ of the underlying library’s documentation.
+Dredd respects ``HTTP_PROXY``, ``HTTPS_PROXY``, ``NO_PROXY``, ``http_proxy``, ``https_proxy``, and ``no_proxy`` environment variables. For more information on how those work see `relevant section <https://github.com/request/request>`__ of the underlying library’s documentation.
 
 Dredd intentionally **does not support HTTP(S) proxies for testing**. Proxy can deliberately modify requests and responses or to behave in a very different way then the server under test. Testing over a proxy is, in the first place, testing of the proxy itself. That makes the test results irrelevant (and hard to debug).
