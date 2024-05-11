@@ -12,10 +12,12 @@ jobs:
         os: [ubuntu-latest]
         node-version: [12.x]
 
+    services:
+      mongo:
+        image: mongo:4.4
+        ports: ["27017:27017"]
+
     steps:
-    - uses: supercharge/mongodb-github-action@1.6.0
-      with:
-        mongodb-version: 4.4
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
